@@ -1,21 +1,22 @@
 {
   "files": {
     "main.css": "/react-homeworks/static/css/main.92c4866e.css",
-    "main.js": "/react-homeworks/static/js/main.1f1f4298.js",
+    "main.js": "/react-homeworks/static/js/main.e970a8ef.js",
     "static/js/787.1a96d458.chunk.js": "/react-homeworks/static/js/787.1a96d458.chunk.js",
     "static/media/avatar.png": "/react-homeworks/static/media/avatar.d947cb9d0d13765666b6.png",
     "static/media/ava-synthwave.png": "/react-homeworks/static/media/ava-synthwave.811585272b3fa28359ca.png",
     "static/media/404.svg": "/react-homeworks/static/media/404.dae7af4892f2a3abe805a174178919f2.svg",
     "static/media/closeOutline.svg": "/react-homeworks/static/media/closeOutline.91a6693133923612a0702421ab3e9923.svg",
+    "static/media/editIcon.svg": "/react-homeworks/static/media/editIcon.11c8e1c42f9a4eae81897d68e091eb42.svg",
     "static/media/checked.svg": "/react-homeworks/static/media/checked.0b6a1bcf5d417ff0a947.svg",
     "index.html": "/react-homeworks/index.html",
     "static/media/burger.svg": "/react-homeworks/static/media/burger.e4e6b98e4ee0b2dfcd76d02a9eed2e34.svg",
     "main.92c4866e.css.map": "/react-homeworks/static/css/main.92c4866e.css.map",
-    "main.1f1f4298.js.map": "/react-homeworks/static/js/main.1f1f4298.js.map",
+    "main.e970a8ef.js.map": "/react-homeworks/static/js/main.e970a8ef.js.map",
     "787.1a96d458.chunk.js.map": "/react-homeworks/static/js/787.1a96d458.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.92c4866e.css",
-    "static/js/main.1f1f4298.js"
+    "static/js/main.e970a8ef.js"
   ]
 }
