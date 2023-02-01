@@ -12,6 +12,11 @@
     --color: #FFFFFF;
     --background: #212A34;
 }
+[data-theme='4'] {
+    --color: #FFFFFF;
+    background: url('./ateoTheme.jpg');
+    background-size: cover;
+}
 
 html {
     background-color: var(--background);
