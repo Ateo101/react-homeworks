@@ -34,14 +34,25 @@ const HW13 = () => {
         axios
             .post(url, {success: x})
             .then((res) => {
-                setCode('Код 200!')
+                setCode('Code 200!')
                 setImage(success200)
                 // дописать
-
             })
             .catch((e) => {
                 // дописать
-
+                if (e.response.status === 400) {
+                    setCode('Code 400')
+                    setImage(error400)
+                } else if (e.response.status === 500) {
+                    setCode('Code 500')
+                    setImage(error500)
+                } else {
+                    setCode('Sorry! Something went wrong...')
+                    setImage(errorUnknown)
+                }
+            })
+            .finally(() => {
+                setInfo('')
             })
     }
 
@@ -56,7 +67,7 @@ const HW13 = () => {
                         onClick={send(true)}
                         xType={'secondary'}
                         // дописать
-
+                        disabled={info !== ''}
                     >
                         Send true
                     </SuperButton>
@@ -65,7 +76,7 @@ const HW13 = () => {
                         onClick={send(false)}
                         xType={'secondary'}
                         // дописать
-
+                        disabled={info !== ''}
                     >
                         Send false
                     </SuperButton>
@@ -74,7 +85,7 @@ const HW13 = () => {
                         onClick={send(undefined)}
                         xType={'secondary'}
                         // дописать
-
+                        disabled={info !== ''}
                     >
                         Send undefined
                     </SuperButton>
@@ -83,7 +94,7 @@ const HW13 = () => {
                         onClick={send(null)} // имитация запроса на не корректный адрес
                         xType={'secondary'}
                         // дописать
-
+                        disabled={info !== ''}
                     >
                         Send null
                     </SuperButton>
