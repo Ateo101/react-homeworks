@@ -34,25 +34,26 @@ const HW13 = () => {
         axios
             .post(url, {success: x})
             .then((res) => {
-                setCode('...всё ок)')
+                setCode('Code 200!')
+                setInfo('...всё ок)')
                 setImage(success200)
                 // дописать
             })
             .catch((e) => {
                 // дописать
                 if (e.response.status === 400) {
-                    setCode('Ты не отправил success в body вообще!')
+                    setCode('Code 400!')
+                    setInfo('Ты не отправил success в body вообще!')
                     setImage(error400)
                 } else if (e.response.status === 500) {
-                    setCode('эмитация ошибки на сервере')
+                    setCode('Code 500!')
+                    setInfo('эмитация ошибки на сервере')
                     setImage(error500)
                 } else {
-                    setCode('Error')
+                    setCode('Unknown code!')
+                    setInfo('Error')
                     setImage(errorUnknown)
                 }
-            })
-            .finally(() => {
-                setInfo('')
             })
     }
 
