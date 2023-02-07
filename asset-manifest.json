@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-homeworks/static/css/main.d8462afd.css",
-    "main.js": "/react-homeworks/static/js/main.08503300.js",
+    "main.js": "/react-homeworks/static/js/main.fc8ba5d4.js",
     "static/js/787.1a96d458.chunk.js": "/react-homeworks/static/js/787.1a96d458.chunk.js",
     "static/media/ateoTheme.jpg": "/react-homeworks/static/media/ateoTheme.4eaa3d8fff2af19921c2.jpg",
     "static/media/avatar.png": "/react-homeworks/static/media/avatar.d947cb9d0d13765666b6.png",
@@ -17,11 +17,11 @@
     "index.html": "/react-homeworks/index.html",
     "static/media/burger.svg": "/react-homeworks/static/media/burger.e4e6b98e4ee0b2dfcd76d02a9eed2e34.svg",
     "main.d8462afd.css.map": "/react-homeworks/static/css/main.d8462afd.css.map",
-    "main.08503300.js.map": "/react-homeworks/static/js/main.08503300.js.map",
+    "main.fc8ba5d4.js.map": "/react-homeworks/static/js/main.fc8ba5d4.js.map",
     "787.1a96d458.chunk.js.map": "/react-homeworks/static/js/787.1a96d458.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d8462afd.css",
-    "static/js/main.08503300.js"
+    "static/js/main.fc8ba5d4.js"
   ]
 }
