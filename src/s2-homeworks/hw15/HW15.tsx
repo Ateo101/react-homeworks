@@ -64,9 +64,13 @@ const HW15 = () => {
         setPage(newPage)
         setCount(newCount)
 
-        sendQuery({sort, page: newPage, count: newCount})
-        const params = Object.fromEntries(searchParams)
-        setSearchParams(params)
+        const pageQuery: { page?: string } = newPage !== 1 ? {page: newPage + ''} : {} // если стандарт - то не записывать в урл
+        const countQuery: { count?: string } = newCount !== 4 ? {count: newCount + ''} : {} // если стандарт - то не записывать в урл
+        const {count, page, ...lastQueries} = Object.fromEntries(searchParams)
+
+        const allQuery = {...lastQueries, ...pageQuery, ...countQuery}
+        sendQuery(allQuery)
+        setSearchParams(allQuery)
         //
     }
 
@@ -75,9 +79,12 @@ const HW15 = () => {
         setSort(newSort)
         setPage(1) // при сортировке сбрасывать на 1 страницу
 
-        sendQuery({sort: newSort})
-        const params = Object.fromEntries(searchParams)
-        setSearchParams(params)
+        const sortQuery: { sort?: string } = newSort !== '' ? {sort: newSort} : {} // если стандарт - то не записывать в урл
+        const {sort, page, ...lastQueries} = Object.fromEntries(searchParams)
+
+        const allQuery = {...lastQueries, ...sortQuery}
+        sendQuery(allQuery)
+        setSearchParams(allQuery)
         //
     }
 
