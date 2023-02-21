@@ -31,10 +31,10 @@ const SuperSort: React.FC<SuperSortPropsType> = (
         sort, value, onChange, id = 'hw15',
     }
 ) => {
-    /*const up = '0' + value
-    const down = '1' + value*/
-    const up = value
-    const down = value
+    const up = '0' + value
+    const down = '1' + value
+    /*const up = value
+    const down = value*/
 
     const onChangeCallback = () => {
         onChange(pureChange(sort, down, up))
@@ -59,7 +59,7 @@ const SuperSort: React.FC<SuperSortPropsType> = (
                 src={icon}
             />
 
-            {/*{icon} а это убрать*/}
+            {/*{icon} *а это убрать*/}
         </span>
     )
 }

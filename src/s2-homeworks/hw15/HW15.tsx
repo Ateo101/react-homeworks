@@ -67,7 +67,6 @@ const HW15 = () => {
         sendQuery({sort, page: newPage, count: newCount})
         const params = Object.fromEntries(searchParams)
         setSearchParams(params)
-debugger
         //
     }
 
